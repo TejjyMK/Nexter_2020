@@ -1,5 +1,11 @@
 @use "base" as *
 
 .features
-    background-color: $color-light-grey-2
+    // OG grid
     grid-column: center-start/center-end
+
+
+    // Sub Grid
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    grid-gap: 6rem
