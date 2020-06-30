@@ -10,9 +10,24 @@
 
 .heading-2
     @extend %heading
+    font:
+        size: 4rem
+        style: italic
+
+    line-height: 1
+
+    &--light
+        color: $color-light-grey-1
+
+    &--dark
+        color: $color-dark-brown-1
+
 
 .heading-3
     @extend %heading
+    font-size: 1.6rem
+    color: $color-primary
+    text-transform: uppercase
 
 .heading-4
     @extend %heading
@@ -23,3 +38,33 @@
 
     &--dark
         color: $color-dark-brown-1
+
+// Helper Classes
+.mb-sm
+    margin-bottom: 2rem
+
+.mb-md
+    margin-bottom: 3rem
+
+.mb-lg
+    margin-bottom: 4rem
+
+.btn
+    background-color: $color-primary
+    border: none
+    color: #ffffff
+    cursor: pointer
+
+    font:
+        family: $font-display
+        size: 1.5rem
+    
+    padding: 1.8rem 3rem
+    text-transform: uppercase
+    transition: all .2s
+    
+
+    &:hover
+        background-color: $color-primary-dark
+
+

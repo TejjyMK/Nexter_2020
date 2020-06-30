@@ -1,9 +1,22 @@
 @use "base" as *
 .story
-    &__pictures 
+    &__pictures
         background-color: $color-primary
         grid-column: full-start/ col-end 4
 
     &__content
         background-color: $color-light-grey-1
         grid-column: col-end 4/ full-end
+        padding: 6rem 8vw
+
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+
+    &__text
+        font:
+            size: 1.5rem
+            style: italic
+
+        margin-bottom: 4rem
