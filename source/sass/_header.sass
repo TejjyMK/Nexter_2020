@@ -1,5 +1,48 @@
 @use "base" as *
 
 .header
-    background-color: $color-secondary
     grid-column: full-start/col-end 6
+    background-image: linear-gradient(rgba($color-secondary,.93 ), rgba($color-secondary,.93 )), url(../img/hero.jpeg)
+    background-size: cover
+    background-position: center
+
+    display: grid
+    grid-template-rows: 1fr min-content 6rem 1fr
+    grid-template-columns: max-content
+    gap: 1.5rem
+    justify-content: center
+    padding: 8rem
+    padding-top: 4rem
+
+    &__btn
+        align-self: start
+        justify-self: start
+
+    &__logo
+        height: 3rem
+        justify-self: center
+
+    &__seenon-logos
+        display: grid
+        grid-template-columns: repeat(4,1fr)
+        gap: 3rem
+        justify-items: center
+        img
+            height: 2.5rem
+            filter: brightness(70%)
+
+    &__seenon-text
+        display: grid
+        font-size: 1.6rem
+        color: $color-light-grey-2
+        grid-template-columns: 1fr max-content 1fr
+        align-items: center
+        gap: 1.5rem
+
+        // the bars before and after the Seen On text
+        &::after,
+        &::before
+            content: ""
+            height: 1px
+            display: block
+            background-color: currentColor // takes color from parent
