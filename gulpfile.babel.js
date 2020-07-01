@@ -21,6 +21,7 @@ var sassSrc = 'source/sass/**/*.sass',
 
     // * html vs pug (Depending on your mood)
     htmlSrc = 'source/*.html',
+    jsonSrc = './source/homes.json',
     pugSrc = 'source/pugTemp/*.pug',
     pugIncSrc = 'source/pugTemp/**/*.pug',
     htmlDest = 'build/',
@@ -37,9 +38,13 @@ var sassSrc = 'source/sass/**/*.sass',
 
 // compiles all pug templates
 gulp.task('pug', function () {
+    const homes= require(jsonSrc);
     return gulp.src(pugSrc)
         .pipe(pug({
-            pretty: true
+            pretty: true,
+            locals: {
+                homes: homes
+            }
         }))
         .pipe(gulp.dest(htmlDest))
 });

@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Beautiful Familiy House",
+        "image": "assets/img/house-1.jpeg",
+        "country": "USA",
+        "rooms": 5,
+        "area": 325,
+        "price": 1200000
+    },
+    {
+        "name": "Modern Glass Villa",
+        "image": "assets/img/house-2.jpeg",
+        "country": "Canada",
+        "rooms": 6,
+        "area": 450,
+        "price": 2750000
+    },
+    {
+        "name": "Cozy Country House",
+        "image": "assets/img/house-3.jpeg",
+        "country": "UK",
+        "rooms": 4,
+        "area": 250,
+        "price": 850000
+    },
+    {
+        "name": "Large Rustical Villa",
+        "image": "assets/img/house-4.jpeg",
+        "country": "Portugal",
+        "rooms": 6,
+        "area": 480,
+        "price": 1950000
+    },
+    {
+        "name": "Majestic Palace House",
+        "image": "assets/img/house-5.jpeg",
+        "country": "Germany",
+        "rooms": 18,
+        "area": 4250,
+        "price": 9750000
+    },
+    {
+        "name": "Majestic Palace House",
+        "image": "assets/img/house-6.jpeg",
+        "country": "Italy",
+        "rooms": 3,
+        "area": 180,
+        "price": 600000
+    }
+]

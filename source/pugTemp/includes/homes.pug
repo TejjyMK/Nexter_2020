@@ -1,0 +1,34 @@
+mixin home(imgUrl,title,country,rooms,area,price)
+    .home
+        img.home__img(src=imgUrl, alt="")
+        svg.home__like
+            use(xlink:href="./assets/img/sprite.svg#icon-heart-full")
+        h5.home__name= title
+        .home__location
+            svg
+                use(xlink:href="./assets/img/sprite.svg#icon-map-pin")
+            p= country
+        .home__rooms
+            svg
+                use(xlink:href="./assets/img/sprite.svg#icon-profile-male")
+            p= rooms
+        .home__area
+            svg
+                use(xlink:href="./assets/img/sprite.svg#icon-expand")
+            p= area
+                sup 2
+        .home__price
+            svg
+                use(xlink:href="./assets/img/sprite.svg#icon-key")
+            p= price
+        button.home__btn.btn Contact realtor 
+
+each home in locals.homes
+    +home(
+        home.image,
+        home.name,
+        home.country,
+        home.rooms + ' rooms',
+        home.area,
+       '$' +home.price
+    )
