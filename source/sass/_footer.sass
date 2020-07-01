@@ -3,3 +3,38 @@
 .footer
     background-color: $color-secondary
     grid-column: full-start/full-end
+    padding: 8rem
+
+.nav
+    list-style: none 
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr))
+    gap: 2rem
+    align-items: center
+
+    &__link:link,
+    &__link:visited
+        color: #ffffff
+        font:
+            family: $font-display
+            size: 1.4rem
+
+        text:
+            align: center
+            transform: uppercase
+            decoration: none
+
+        padding: 1.5rem
+        display: block
+        
+        transition: all .2s
+
+    &__link:active,
+    &__link:hover
+        background-color: rgba(#ffffff,.05) 
+
+.copyright
+    font-size: 1.4rem
+    color: #ffffff
+    text-align: center
+    margin-top: 6rem
